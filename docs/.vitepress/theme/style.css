@@ -1,0 +1,52 @@
+/* Tokyo Night color palette preferred (#1a1b26 background, #7aa2f7 blue, #bb9af7 purple, #9ece6a green, #f7768e red) */
+
+:root {
+  /* Tokyo Night theme variables overriding VitePress defaults */
+  --vp-c-brand-1: #7aa2f7;
+  --vp-c-brand-2: #bb9af7;
+  --vp-c-brand-3: #9ece6a;
+  
+  --vp-c-bg: #1a1b26;
+  --vp-c-bg-alt: #16161e;
+  --vp-c-bg-elv: #24283b;
+  --vp-c-bg-soft: #24283b;
+
+  --vp-c-text-1: #c0caf5;
+  --vp-c-text-2: #a9b1d6;
+  --vp-c-text-3: #565f89;
+
+  --vp-c-border: #292e42;
+  --vp-c-divider: #292e42;
+
+  --vp-c-gutter: #414868;
+}
+
+html {
+  color-scheme: dark;
+}
+
+/* Ensure we default to dark mode for Tokyo Night */
+html:not(.dark) {
+  --vp-c-bg: #1a1b26;
+  --vp-c-bg-alt: #16161e;
+  --vp-c-text-1: #c0caf5;
+  --vp-c-text-2: #a9b1d6;
+}
+
+/* Custom styles for elements to match aesthetic */
+.vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4, .vp-doc h5, .vp-doc h6 {
+  color: #7aa2f7;
+}
+
+.vp-doc a {
+  color: #bb9af7;
+}
+
+.vp-doc strong {
+  color: #f7768e;
+}
+
+.vp-doc code {
+  color: #9ece6a;
+  background-color: var(--vp-c-bg-alt);
+}
